@@ -16,8 +16,16 @@ This backup system is a bit more complicated than more automated options. While 
 to copy files, running those scripts requires regular, active maintance. This active
 maintance is also a point of failure.
 
-There are two primary reasons  
+Traditional backup systems put an emphasis on recovery.
 
-Accessibility is the key requirement in building this backup system. In particular:
+Longevity.
 
- - Accessibilty of files - Files are copied via rsync. There are no propietary tooling which could one day go unmaintained.
+There are two primary reasons I'm trying this system out:
+
+ - File Accessibility: I want the files to be accessible over time.
+ - Family: I want my children (and their children and their children) to have access to these files someday.
+
+## File Accessibility
+
+
+## Family
