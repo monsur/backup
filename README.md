@@ -29,3 +29,5 @@ There are two primary reasons I'm trying this system out:
 
 
 ## Family
+
+nature of ownership changing. More stuff going online, owning less media, personal photos/videos/creation is what's unique, all while storage is increasing
