@@ -18,27 +18,27 @@ behind it.
 The primary motivation for having a backup system is *recovery*. If your computer fails, you can
 recover your data on a new computer.
 
-There is a slightly different but related dimension to backups, which is *longevity*. Longevity
-means I want my data to be available for decades and even centuries. I want my children and my
-children's children to have access to photos/videos of our family.
+There is a slightly different but related dimension, which is *longevity*. Longevity means I want my
+data accessible for decades and even centuries. I want my children and my children's children to
+have access to photos/videos of our family.
 
-Current backup systems tend to be better suited for recovery. For example, Apple's Time Machine is a
-robust backup mechanism. It backs up automatically and keeps file history so I can retrieve previous
-versions. But it is also proprietary. You can't just grab a Time Machine drive and browse its files
-(even less so if the Time Machine backup is password protected with a password only I know).
+Current backup systems are better suited for recovery. For example, Apple's Time Machine is a robust
+backup tool. It backs up automatically and stores previous file history. But it is also proprietary.
+You can't grab a Time Machine drive and browse its files (even less so if the Time Machine drive is
+password-protected, and even less so if the password is forgotten).
 
-Full recovery is also not quite what I want. For example, when I get a new computer, I like the idea
-of starting fresh. I want to copy my previous files, but I don't want to carry over my previous
-state (I have no clue how all the different versions of Python, Ruby, and Node actually work on my
-current setup).
+Full recovery is also not always what I want. For example, when I get a new computer, I like the
+idea of starting fresh. I want to copy my previous files, but I don't want to carry over the
+previous state (I have no clue how all the different versions of Python, Ruby, and Node coexist on
+my machine).
 
 Finally, the computing landscape has changed dramatically over the years. My first computer was
-filled with personal files. Scanned tax records, receipts, movies (let's be honest, pirated
-movies, thanks to BitTorrent!), music (same), and a just a lot of _stuff_.
+filled with personal files. Scanned tax records, receipts, movies (let's be honest, pirated movies,
+thanks to BitTorrent!), music (same)... just a lot of _stuff_.
 
-Most of that stuff lives online now. It’s far easier to Google something than save a local copy for
-later. Most of my docs live in Google Drive. I love unlimited access to music from Spotify. And it’s
-far easier to rent or stream the latest movie.
+Most of that stuff lives online now. It’s easier to Google something than save a local copy for
+later. I don't even bookmark sites anymore. Most of my docs live in Google Drive. I love unlimited
+access to music from Spotify. And it’s easier to rent or stream the latest movie.
 
 ## Photos & Videos: What really matter
 
@@ -68,11 +68,15 @@ And it adheres to the
 cloud options like iCloud and Backblaze.
 
 There are a few downsides to this system as well. The first is maintainability. The nice thing about
-off-the-shelf backup solutions like Time Machine is that they are automated. Once they are
-configured, I don't have to think about them again. I include iCloud and Backblaze in this backup
-system as a hedge against this, so there is continued automation in case I don't keep up with
-running my backup scripts. I may also find ways to improve the automation in the future, as I get a
-better sense of how this backup system works in practice.
+off-the-shelf backup solutions is that they are automated. I configure them once and never think
+about them again. I include iCloud and Backblaze in this backup system as a hedge against this, so
+there is continued automation in case I don't keep up with running the backup scripts regularly. I
+may also find ways to improve the automation in the future, as I get a better sense of how this
+backup system works in practice.
+
+I also don't know how maintainability will scale as more devices are added. Our kids are young now,
+but someday they will have their own phones and computers. Am I really going to plug in a USB drive
+and run an rsync script on every computer?
 
 The second downside is security. Since I want these files to be accessible by my family, I've
 avoided any proprietary pieces, including passwords. I'm ok with this tradeoff since as mentioned
