@@ -1,6 +1,6 @@
 This repo hosts files related to my personal home backup system.
 
-The overview of the system looks like this:
+Here's an overview of the system:
 
 ![backup architecture](https://raw.githubusercontent.com/monsur/backup/main/backup.png)
 
@@ -12,7 +12,9 @@ The overview of the system looks like this:
 
 # Details
 
-This backup system is a bit more complicated than more automated options. While I use scripts
+This backup system is more complicated than available automated options, and I wanted to share my thinking behind it. 
+
+While I use scripts
 to copy files, running those scripts requires regular, active maintance. This active
 maintance is also a point of failure.
 
