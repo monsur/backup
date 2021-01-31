@@ -1,5 +1,7 @@
 This repo hosts files related to my home backup system.
 
+This README is mirrored at https://monsur.medium.com/my-home-backup-2021-edition-ace367eefd0c
+
 Here's an overview of the system:
 
 ![backup architecture](https://raw.githubusercontent.com/monsur/backup/main/backup.png)
@@ -10,7 +12,7 @@ Here's an overview of the system:
 1. The data from each laptop is copied to an external hard drive via rsync.
 1. Each laptop backs up to Backblaze.
 
-## Recover vs Longevity
+## Recover & Longevity
 
 This backup system is more complicated than automated backup tools, so I wanted to share my thinking
 behind it.
@@ -40,7 +42,7 @@ Most of that stuff lives online now. It’s easier to Google something than save
 later. I don't even bookmark sites anymore. Most of my docs live in Google Drive. I love unlimited
 access to music from Spotify. And it’s easier to rent or stream the latest movie.
 
-## Photos & Videos: What really matter
+## Photos & Videos
 
 The only content I'm producing is photos and videos. And those are really, *really* important and
 irreplaceable.
@@ -58,7 +60,7 @@ phones, but sometimes from a DSLR) into a single folder on my laptop, and then s
 with my wife's laptop. That extra syncing serves two purposes: a) it gives my wife quicker access to
 our photos, and b) it offers further redundancy for what matters most.
 
-## This Backup System: Pros & Cons
+## Pros & Cons
 
 The backup system I'm experimenting with optimizes for longevity in a few ways. It focuses on
 backing up data files, not system state or history. It uses standard tooling like rsync and
