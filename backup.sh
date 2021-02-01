@@ -6,3 +6,5 @@ rsync -avz --delete --exclude '.DS_Store' $BACKUP_SRC_DIR/Documents/ $BACKUP_DES
 rsync -avz --delete --exclude '.DS_Store' $BACKUP_SRC_DIR/Movies/ $BACKUP_DEST_DIR/Movies
 rsync -avz --delete --exclude '.DS_Store' $BACKUP_SRC_DIR/Music/ $BACKUP_DEST_DIR/Music
 rsync -avz --delete --exclude '.DS_Store' $BACKUP_SRC_DIR/Pictures/ $BACKUP_DEST_DIR/Pictures
+rsync -avz --delete --exclude '.DS_Store' $BACKUP_SRC_DIR/Pictures/ $BACKUP_DEST_DIR/Pictures
+rsync -avz --delete --exclude '.DS_Store' $BACKUP_SRC_DIR/Google\ Drive/ $BACKUP_DEST_DIR/Google\ Drive
